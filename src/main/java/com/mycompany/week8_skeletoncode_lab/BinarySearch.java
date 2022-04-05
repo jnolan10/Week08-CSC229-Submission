@@ -29,5 +29,15 @@ public class BinarySearch {
     }
     //ToDo 2: Call the above method and test the algorithm  
     // provide time and space analysis 
-
+    public static void main(String[] args) {
+        int[] test = {2,5,6,11,23,44,56,91,99};
+        int key = 11;
+        int size = test.length;
+        
+        int indexOfKey = runBinarySearchIteratively(test,key,0,size); 
+        if(indexOfKey == -1)
+            System.out.println("could not find specified key in array.");
+        else 
+            System.out.println("Key element found at index: " + indexOfKey); 
+   }
 }
